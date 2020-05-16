@@ -15,6 +15,21 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader']
+      },
+      {
+				test: /\.(svg|eot|woff|ttf|svg|woff2)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: "fonts/[name].[ext]"
+						}
+					}
+				]
+			}
     ],
   },
   resolve: {
