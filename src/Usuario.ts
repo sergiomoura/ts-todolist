@@ -1,4 +1,6 @@
-class Usuario {
+import { ListaDeTarefas } from "./ListaDeTarefas";
+
+export class Usuario {
     private email:string;
     public nome:string;
     private senha:string;

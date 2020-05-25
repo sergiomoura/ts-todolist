@@ -1,4 +1,6 @@
-class TarefaComDataLimite extends Tarefa{
+import { Tarefa } from "./Tarefa";
+
+export class TarefaComDataLimite extends Tarefa{
 
     public dataLimite: Date;
 
